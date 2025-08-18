@@ -1,0 +1,238 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\sgado\\scorecard - Copy\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sgado\\scorecard - Copy\\scorecard_backend\\app.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:scorecard_backend\\app.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sgado\\scorecard - Copy\\scorecard_frontend\\src\\components\\YearlyTrendChart.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:scorecard_frontend\\src\\components\\YearlyTrendChart.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sgado\\scorecard - Copy\\scorecard_frontend\\src\\pages\\Dashboard.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:scorecard_frontend\\src\\pages\\Dashboard.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sgado\\scorecard - Copy\\scorecard_frontend\\src\\styles\\global.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:scorecard_frontend\\src\\styles\\global.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sgado\\scorecard - Copy\\scorecard_frontend\\src\\App.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:scorecard_frontend\\src\\App.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sgado\\scorecard - Copy\\scorecard_frontend\\src\\components\\Footer.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:scorecard_frontend\\src\\components\\Footer.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sgado\\scorecard - Copy\\scorecard_frontend\\src\\components\\Footer.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:scorecard_frontend\\src\\components\\Footer.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sgado\\scorecard - Copy\\scorecard_frontend\\src\\components\\Charts.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:scorecard_frontend\\src\\components\\Charts.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sgado\\scorecard - Copy\\scorecard_frontend\\src\\styles\\Sidebar.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:scorecard_frontend\\src\\styles\\Sidebar.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sgado\\scorecard - Copy\\scorecard_frontend\\src\\components\\Sidebar.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:scorecard_frontend\\src\\components\\Sidebar.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sgado\\scorecard - Copy\\scorecard_frontend\\src\\components\\BillTypeDonut.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:scorecard_frontend\\src\\components\\BillTypeDonut.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sgado\\scorecard - Copy\\scorecard_frontend\\src\\components\\DashboardCard.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:scorecard_frontend\\src\\components\\DashboardCard.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sgado\\scorecard - Copy\\scorecard_frontend\\src\\components\\USHeatMap.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:scorecard_frontend\\src\\components\\USHeatMap.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Footer.css",
+              "DocumentMoniker": "C:\\Users\\sgado\\scorecard - Copy\\scorecard_frontend\\src\\components\\Footer.css",
+              "RelativeDocumentMoniker": "scorecard_frontend\\src\\components\\Footer.css",
+              "ToolTip": "C:\\Users\\sgado\\scorecard - Copy\\scorecard_frontend\\src\\components\\Footer.css",
+              "RelativeToolTip": "scorecard_frontend\\src\\components\\Footer.css",
+              "ViewState": "AgIAABIAAAAAAAAAAAAmwCsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-07-14T13:29:43.318Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Footer.js",
+              "DocumentMoniker": "C:\\Users\\sgado\\scorecard - Copy\\scorecard_frontend\\src\\components\\Footer.js",
+              "RelativeDocumentMoniker": "scorecard_frontend\\src\\components\\Footer.js",
+              "ToolTip": "C:\\Users\\sgado\\scorecard - Copy\\scorecard_frontend\\src\\components\\Footer.js",
+              "RelativeToolTip": "scorecard_frontend\\src\\components\\Footer.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-07-14T13:27:10.685Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "App.js",
+              "DocumentMoniker": "C:\\Users\\sgado\\scorecard - Copy\\scorecard_frontend\\src\\App.js",
+              "RelativeDocumentMoniker": "scorecard_frontend\\src\\App.js",
+              "ToolTip": "C:\\Users\\sgado\\scorecard - Copy\\scorecard_frontend\\src\\App.js",
+              "RelativeToolTip": "scorecard_frontend\\src\\App.js",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAwwCYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-07-06T03:18:56.529Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Sidebar.js",
+              "DocumentMoniker": "C:\\Users\\sgado\\scorecard - Copy\\scorecard_frontend\\src\\components\\Sidebar.js",
+              "RelativeDocumentMoniker": "scorecard_frontend\\src\\components\\Sidebar.js",
+              "ToolTip": "C:\\Users\\sgado\\scorecard - Copy\\scorecard_frontend\\src\\components\\Sidebar.js",
+              "RelativeToolTip": "scorecard_frontend\\src\\components\\Sidebar.js",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAuwGkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-07-06T03:16:51.816Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Charts.js",
+              "DocumentMoniker": "C:\\Users\\sgado\\scorecard - Copy\\scorecard_frontend\\src\\components\\Charts.js",
+              "RelativeDocumentMoniker": "scorecard_frontend\\src\\components\\Charts.js",
+              "ToolTip": "C:\\Users\\sgado\\scorecard - Copy\\scorecard_frontend\\src\\components\\Charts.js",
+              "RelativeToolTip": "scorecard_frontend\\src\\components\\Charts.js",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAAAEIAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-06-28T06:04:48.445Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BillTypeDonut.js",
+              "DocumentMoniker": "C:\\Users\\sgado\\scorecard - Copy\\scorecard_frontend\\src\\components\\BillTypeDonut.js",
+              "RelativeDocumentMoniker": "scorecard_frontend\\src\\components\\BillTypeDonut.js",
+              "ToolTip": "C:\\Users\\sgado\\scorecard - Copy\\scorecard_frontend\\src\\components\\BillTypeDonut.js",
+              "RelativeToolTip": "scorecard_frontend\\src\\components\\BillTypeDonut.js",
+              "ViewState": "AgIAABcAAAAAAAAAAAAuwC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-06-28T04:38:27.467Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Dashboard.js",
+              "DocumentMoniker": "C:\\Users\\sgado\\scorecard - Copy\\scorecard_frontend\\src\\pages\\Dashboard.js",
+              "RelativeDocumentMoniker": "scorecard_frontend\\src\\pages\\Dashboard.js",
+              "ToolTip": "C:\\Users\\sgado\\scorecard - Copy\\scorecard_frontend\\src\\pages\\Dashboard.js",
+              "RelativeToolTip": "scorecard_frontend\\src\\pages\\Dashboard.js",
+              "ViewState": "AgIAAJgAAAAAAAAAAAAAAK8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-06-22T01:09:06.952Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "global.css",
+              "DocumentMoniker": "C:\\Users\\sgado\\scorecard - Copy\\scorecard_frontend\\src\\styles\\global.css",
+              "RelativeDocumentMoniker": "scorecard_frontend\\src\\styles\\global.css",
+              "ToolTip": "C:\\Users\\sgado\\scorecard - Copy\\scorecard_frontend\\src\\styles\\global.css",
+              "RelativeToolTip": "scorecard_frontend\\src\\styles\\global.css",
+              "ViewState": "AgIAAMgAAAAAAAAAAAAmwOEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-06-22T01:20:00.356Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "YearlyTrendChart.js",
+              "DocumentMoniker": "C:\\Users\\sgado\\scorecard - Copy\\scorecard_frontend\\src\\components\\YearlyTrendChart.js",
+              "RelativeDocumentMoniker": "scorecard_frontend\\src\\components\\YearlyTrendChart.js",
+              "ToolTip": "C:\\Users\\sgado\\scorecard - Copy\\scorecard_frontend\\src\\components\\YearlyTrendChart.js",
+              "RelativeToolTip": "scorecard_frontend\\src\\components\\YearlyTrendChart.js",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAwwEcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-06-28T04:25:48.79Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "app.py",
+              "DocumentMoniker": "C:\\Users\\sgado\\scorecard - Copy\\scorecard_backend\\app.py",
+              "RelativeDocumentMoniker": "scorecard_backend\\app.py",
+              "ToolTip": "C:\\Users\\sgado\\scorecard - Copy\\scorecard_backend\\app.py",
+              "RelativeToolTip": "scorecard_backend\\app.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-06-22T00:47:46.899Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "USHeatMap.js",
+              "DocumentMoniker": "C:\\Users\\sgado\\scorecard - Copy\\scorecard_frontend\\src\\components\\USHeatMap.js",
+              "RelativeDocumentMoniker": "scorecard_frontend\\src\\components\\USHeatMap.js",
+              "ToolTip": "C:\\Users\\sgado\\scorecard - Copy\\scorecard_frontend\\src\\components\\USHeatMap.js",
+              "RelativeToolTip": "scorecard_frontend\\src\\components\\USHeatMap.js",
+              "ViewState": "AgIAALIAAAAAAAAAAAAAALcAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-06-22T01:36:57.229Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Sidebar.css",
+              "DocumentMoniker": "C:\\Users\\sgado\\scorecard - Copy\\scorecard_frontend\\src\\styles\\Sidebar.css",
+              "RelativeDocumentMoniker": "scorecard_frontend\\src\\styles\\Sidebar.css",
+              "ToolTip": "C:\\Users\\sgado\\scorecard - Copy\\scorecard_frontend\\src\\styles\\Sidebar.css",
+              "RelativeToolTip": "scorecard_frontend\\src\\styles\\Sidebar.css",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAkwHkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-07-07T14:55:25.658Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DashboardCard.js",
+              "DocumentMoniker": "C:\\Users\\sgado\\scorecard - Copy\\scorecard_frontend\\src\\components\\DashboardCard.js",
+              "RelativeDocumentMoniker": "scorecard_frontend\\src\\components\\DashboardCard.js",
+              "ToolTip": "C:\\Users\\sgado\\scorecard - Copy\\scorecard_frontend\\src\\components\\DashboardCard.js",
+              "RelativeToolTip": "scorecard_frontend\\src\\components\\DashboardCard.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-06-22T00:37:32.71Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
