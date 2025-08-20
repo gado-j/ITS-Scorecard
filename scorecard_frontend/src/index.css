@@ -1,0 +1,24 @@
+/* src/index.css */
+
+/* Make html, body, and the #root div fill the viewport */
+html,
+body,
+#root {
+    height: 100%;
+    margin: 0;
+}
+
+/* Wraps the sidebar + main area */
+.app-container {
+    display: flex;
+    height: 100%;
+}
+
+/* The main content area (under the sidebar) */
+.app-main {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* take up all remaining vertical space */
+    padding: 20px; /* optional padding around page content */
+    overflow-y: auto; /* scroll when content is taller than the viewport */
+}

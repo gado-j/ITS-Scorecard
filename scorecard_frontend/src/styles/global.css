@@ -1,0 +1,225 @@
+/* 🌟 Global Styling & Theme Switcher */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+[data-theme="light"] {
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+[data-theme="dark"] {
+    background-color: #000;
+    color: #fff;
+}
+
+/* ⚡ App Layout */
+html, body, #root {
+    height: 100%;
+}
+
+.app-container {
+    display: flex;
+    height: 100%;
+}
+
+.app-main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow-y: auto;
+    /* ensure footer sticks */
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    transition: margin-left 0.3s ease, width 0.3s ease;
+}
+
+/* ⚡ Sidebar */
+.sidebar {
+    width: 200px;
+    background: #2c3e50;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    transition: width 0.3s ease;
+}
+
+.app-container.collapsed .sidebar {
+    width: 60px;
+}
+
+.app-container.collapsed .content {
+    margin-left: 60px;
+    width: calc(100% - 60px);
+}
+
+.content {
+    margin-left: 200px;
+    width: calc(100% - 200px);
+}
+
+/* ⚙️ Dashboard Container */
+.dashboard-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.dashboard-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #1976d2;
+    margin-bottom: 24px;
+}
+
+/* 1️⃣ Heatmap: single card wrapper */
+.heatmap-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-bottom: 32px;
+    position: relative;
+}
+    /* wipe out any inner-background on USHeatMap’s root DIV */
+    .heatmap-card > div {
+        background: transparent !important;
+        box-shadow: none !important;
+        margin: 0;
+        padding: 0;
+    }
+
+/* 2️⃣ Filters */
+.filters-container {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+    .filters-container select,
+    .filters-container input {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background: #fff;
+    }
+
+/* 3️⃣ KPI Cards */
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+/* 4️⃣ Card Base */
+.card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 20px;
+    transition: transform 0.2s;
+}
+
+    .card:hover {
+        transform: translateY(-5px);
+    }
+
+/* 5️⃣ Charts Grid: 2×2 on desktop, 1×N on mobile */
+.charts-grid {
+    display: grid;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+    .charts-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    .charts-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Ensure each chart fits entirely in its card */
+.chart-wrapper {
+    width: 100%;
+    height: 300px;
+}
+
+    .chart-wrapper.donut {
+        height: 360px;
+    }
+
+/* 6️⃣ Insights Grid */
+.insights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+/* —————— Footer —————— */
+.app-footer {
+    background: #f5f6f8;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: auto; /* push to bottom */
+}
+
+.footer-logos {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-logo {
+    height: 60px;
+    object-fit: contain;
+}
+
+.footer-copy {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+@media (max-width:700px) {
+    .app-footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-copy {
+        margin-top: 12px;
+    }
+}
+
+/* Dark-mode tweaks */
+[data-theme="dark"] .card,
+[data-theme="dark"] .heatmap-card {
+    background: #1a1a1a;
+    color: #eee;
+}
+
+    [data-theme="dark"] .card h3,
+    [data-theme="dark"] .dashboard-title {
+        color: #fff;
+    }

@@ -1,0 +1,6 @@
+# Ignore node_modules and unnecessary files
+node_modules/
+.cache/
+dist/
+*.pack
+*.log

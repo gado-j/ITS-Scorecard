@@ -1,0 +1,121 @@
+/* Sidebar base */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100vh;
+    background: #2c3e50;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    transition: width 0.3s ease;
+    box-sizing: border-box;
+    padding: 1rem 0.5rem;
+    z-index: 100;
+}
+
+    /* Collapsed state */
+    .sidebar.collapsed {
+        width: 60px;
+    }
+
+/* Header: hamburger + title */
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+    padding: 0 0.5rem;
+}
+
+.collapse-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.25rem;
+    cursor: pointer;
+    padding: 0;
+}
+
+/* Hide the title when collapsed */
+.sidebar.collapsed .sidebar-title {
+    display: none;
+}
+
+.sidebar-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    white-space: nowrap;
+    margin: 0;
+}
+
+/* Menu items */
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex: 1;
+}
+
+    .sidebar-menu li {
+        margin: 0.5rem 0;
+    }
+
+        .sidebar-menu li a,
+        .sidebar-menu li.collapsible {
+            display: flex;
+            align-items: center;
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+    /* Icon */
+    .sidebar-menu .icon {
+        flex-shrink: 0;
+        font-size: 1.1rem;
+        width: 24px;
+        text-align: center;
+    }
+
+/* Link text */
+.link-text {
+    margin-left: 0.75rem;
+    white-space: nowrap;
+}
+
+/* Hide link-text when collapsed */
+.sidebar.collapsed .link-text {
+    display: none;
+}
+
+/* Center icons in collapsed mode */
+.sidebar.collapsed .sidebar-menu li a,
+.sidebar.collapsed .sidebar-menu li.collapsible {
+    justify-content: center;
+    padding: 0.75rem 0;
+}
+
+/* Active & hover states */
+.sidebar-menu li a:hover,
+.sidebar-menu li a.active {
+    background: #1976d2;
+}
+
+.sidebar-submenu {
+    list-style: none;
+    padding-left: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+    .sidebar-submenu li {
+        margin: 0.25rem 0;
+    }
+
+    .sidebar-submenu .icon.small {
+        font-size: 0.85rem;
+        width: 16px;
+    }

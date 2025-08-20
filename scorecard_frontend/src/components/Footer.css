@@ -1,0 +1,43 @@
+.app-footer {
+    position: fixed;
+    bottom: 0;
+    left: 200px; /* sidebar width when expanded */
+    width: calc(100% - 200px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background: #f4f4f9;
+    border-top: 1px solid #ddd;
+    z-index: 100;
+}
+
+/* when sidebar is collapsed to 60px */
+.app-container.collapsed .app-footer {
+    left: 60px;
+    width: calc(100% - 60px);
+}
+
+.footer-logos {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo {
+    height: 40px;
+}
+
+.footer-copy {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Dark-mode overrides */
+[data-theme="dark"] .app-footer {
+    background: #1a1a1a;
+    border-top: 1px solid #444;
+}
+
+[data-theme="dark"] .footer-copy {
+    color: #ccc;
+}
