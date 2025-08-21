@@ -1,23 +1,54 @@
+/* =========================
+   App grid & layout (global)
+   ========================= */
+.app-shell {
+    --sidebar-w: 200px; /* expanded width */
+    --footer-h: 56px;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: var(--sidebar-w) 1fr; /* sidebar | content */
+    grid-template-rows: 1fr auto; /* main    | footer  */
+}
+
+    /* When collapsed, shrink the sidebar column */
+    .app-shell.collapsed {
+        --sidebar-w: 60px;
+    }
+
+    /* Sidebar spans full height and uses the variable width */
+    .app-shell .sidebar {
+        grid-column: 1;
+        grid-row: 1 / span 2;
+        width: var(--sidebar-w) !important; /* override any fixed width in Sidebar.css */
+    }
+
+/* Main content area */
+.app-main {
+    grid-column: 2;
+    grid-row: 1;
+    min-width: 0; /* prevents chart/table overflow */
+    overflow: auto;
+    padding: 16px;
+    padding-bottom: 16px; /* keep a little space above footer */
+}
+
+/* Footer sits at the bottom and spans the content column */
 .app-footer {
-    position: fixed;
-    bottom: 0;
-    left: 200px; /* sidebar width when expanded */
-    width: calc(100% - 200px);
+    grid-column: 2;
+    grid-row: 2;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: var(--footer-h);
     padding: 10px 20px;
     background: #f4f4f9;
     border-top: 1px solid #ddd;
-    z-index: 100;
+    z-index: 1; /* above main content if needed */
 }
 
-/* when sidebar is collapsed to 60px */
-.app-container.collapsed .app-footer {
-    left: 60px;
-    width: calc(100% - 60px);
-}
-
+/* =========================
+   Footer-specific styles
+   ========================= */
 .footer-logos {
     display: flex;
     align-items: center;

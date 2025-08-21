@@ -14,13 +14,12 @@ import {
 } from "react-icons/fa";
 import "../styles/Sidebar.css";
 
-export default function Sidebar() {
-    const [collapsed, setCollapsed] = useState(false);
+export default function Sidebar({ collapsed, onToggle }) {
     const [showScoreSubMenu, setShowScoreSubMenu] = useState(false);
     const userRole = "admin"; // or from context
 
     const toggleCollapsed = () => {
-        setCollapsed((c) => !c);
+        onToggle?.();
         // if collapsing, also close submenu
         if (!collapsed) setShowScoreSubMenu(false);
     };
@@ -60,6 +59,7 @@ export default function Sidebar() {
                     <span className="link-text">Scorecards</span>
                     {showScoreSubMenu ? <FaChevronUp /> : <FaChevronDown />}
                 </li>
+
                 {showScoreSubMenu && !collapsed && (
                     <ul className="sidebar-submenu">
                         <li>
