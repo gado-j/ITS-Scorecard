@@ -7,7 +7,7 @@ from scorecard_processor import analyze_state  # ✅ Import the new module
 app = Flask(__name__)
 CORS(app)
 
-DATA_FOLDER = "C:\\Users\\sgado\\scorecard\\scorecard_backend\\data\\states"
+DATA_FOLDER = "C:\\Users\\sgado\\scorecard 1.1\\scorecard_backend\\data\\states"
 data_cache = {}
 
 def get_available_states():
