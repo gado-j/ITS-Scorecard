@@ -60,11 +60,17 @@ npm start
 
 
 Project Structure
+
 its-scorecard/
+
 ├─ scorecard_backend/
+
 │  ├─ app.py               # Flask backend server
+
 │  ├─ requirements.txt     # Python dependencies
+
 │  └─ data/                # Excel data files (.xlsx)
+
 └─ scorecard_frontend/
    ├─ public/
    │  ├─ index.html
