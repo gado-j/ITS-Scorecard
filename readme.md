@@ -80,7 +80,11 @@ Backend (Python)
 
 cd ../scorecard_backend
 
-pip install -r requirements.txt
+Install 
+Flask==2.3.3
+Flask-Cors==3.0.10
+pandas==2.1.4
+Openpyxl==3.1.2
 
 
 3. Run the Application
