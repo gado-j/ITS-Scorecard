@@ -1,4 +1,7 @@
-/* Sidebar base */
+﻿/* =========================
+   📌 SIDEBAR BASE
+   ========================= */
+
 .sidebar {
     position: fixed;
     top: 0;
@@ -9,24 +12,27 @@
     color: #fff;
     display: flex;
     flex-direction: column;
-    transition: width 0.3s ease;
     box-sizing: border-box;
     padding: 1rem 0.5rem;
+    transition: width 0.3s ease;
     z-index: 100;
 }
 
-    /* Collapsed state */
+    /* Collapsed sidebar */
     .sidebar.collapsed {
         width: 60px;
     }
 
-/* Header: hamburger + title */
+/* =========================
+   🧭 SIDEBAR HEADER
+   ========================= */
+
 .sidebar-header {
     display: flex;
     align-items: center;
-    margin-bottom: 1rem;
     justify-content: space-between;
     padding: 0 0.5rem;
+    margin-bottom: 1rem;
 }
 
 .collapse-btn {
@@ -38,11 +44,7 @@
     padding: 0;
 }
 
-/* Hide the title when collapsed */
-.sidebar.collapsed .sidebar-title {
-    display: none;
-}
-
+/* Title */
 .sidebar-title {
     font-size: 1.25rem;
     font-weight: bold;
@@ -50,7 +52,15 @@
     margin: 0;
 }
 
-/* Menu items */
+/* Hide title when collapsed */
+.sidebar.collapsed .sidebar-title {
+    display: none;
+}
+
+/* =========================
+   📂 MENU LIST
+   ========================= */
+
 .sidebar-menu {
     list-style: none;
     padding: 0;
@@ -58,19 +68,24 @@
     flex: 1;
 }
 
+    /* Menu item wrapper */
     .sidebar-menu li {
-        margin: 0.5rem 0;
+        margin: 0.4rem 0;
     }
 
+        /* Links & collapsible items */
+        .sidebar-link,
         .sidebar-menu li a,
         .sidebar-menu li.collapsible {
             display: flex;
             align-items: center;
+            gap: 0.75rem;
             color: #fff;
             text-decoration: none;
             padding: 0.5rem;
             border-radius: 4px;
             cursor: pointer;
+            transition: background 0.2s ease;
         }
 
     /* Icon */
@@ -83,32 +98,38 @@
 
 /* Link text */
 .link-text {
-    margin-left: 0.75rem;
     white-space: nowrap;
 }
 
-/* Hide link-text when collapsed */
+/* Active & hover */
+.sidebar-menu li a:hover,
+.sidebar-menu li a.active,
+.sidebar-link:hover {
+    background: #1976d2;
+}
+
+/* =========================
+   📉 COLLAPSED MODE
+   ========================= */
+
 .sidebar.collapsed .link-text {
     display: none;
 }
 
-/* Center icons in collapsed mode */
 .sidebar.collapsed .sidebar-menu li a,
 .sidebar.collapsed .sidebar-menu li.collapsible {
     justify-content: center;
     padding: 0.75rem 0;
 }
 
-/* Active & hover states */
-.sidebar-menu li a:hover,
-.sidebar-menu li a.active {
-    background: #1976d2;
-}
+/* =========================
+   📁 SUBMENU
+   ========================= */
 
 .sidebar-submenu {
     list-style: none;
-    padding-left: 1.5rem;
-    margin-top: 0.5rem;
+    padding-left: 1.25rem;
+    margin-top: 0.4rem;
 }
 
     .sidebar-submenu li {
@@ -119,3 +140,37 @@
         font-size: 0.85rem;
         width: 16px;
     }
+
+/* =========================
+   🔐 LOGOUT SECTION
+   ========================= */
+
+.sidebar-logout {
+    padding: 0.75rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Logout button */
+.logout-btn {
+    width: 100%;
+    background: none;
+    border: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+    /* Logout hover */
+    .logout-btn:hover {
+        background: #c0392b;
+    }
+
+/* Center icon when collapsed */
+.sidebar.collapsed .logout-btn {
+    justify-content: center;
+}
