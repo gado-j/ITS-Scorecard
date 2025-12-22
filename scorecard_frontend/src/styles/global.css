@@ -1,8 +1,11 @@
 /* 🌟 Global Styling & Theme Switcher */
-body {
-    font-family: 'Arial', sans-serif;
+html, body, #root {
+    height: 100%;
     margin: 0;
-    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -16,60 +19,77 @@ body {
     color: #fff;
 }
 
-/* ⚡ App Layout */
-html, body, #root {
-    height: 100%;
-}
+/* =========================
+   ⚡ APP LAYOUT (DEFAULT)
+   ========================= */
 
 .app-container {
     display: flex;
-    height: 100%;
+    min-height: 100vh;
+    width: 100%;
 }
 
-.app-main {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    overflow-y: auto;
-    /* ensure footer sticks */
-}
-
+/* Sidebar is fixed, content shifts */
 .content {
     flex: 1;
+    margin-left: 200px;
+    width: calc(100% - 200px);
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
     transition: margin-left 0.3s ease, width 0.3s ease;
 }
 
-/* ⚡ Sidebar */
-.sidebar {
-    width: 200px;
-    background: #2c3e50;
-    color: #fff;
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    display: flex;
-    flex-direction: column;
-    padding-top: 20px;
-    transition: width 0.3s ease;
-}
-
-.app-container.collapsed .sidebar {
-    width: 60px;
-}
-
+/* Collapsed sidebar */
 .app-container.collapsed .content {
     margin-left: 60px;
     width: calc(100% - 60px);
 }
 
-.content {
-    margin-left: 200px;
-    width: calc(100% - 200px);
+/* =========================
+   🔐 LOGIN MODE OVERRIDES
+   ========================= */
+
+.app-container.login-mode {
+    min-height: 100vh;
 }
 
-/* ⚙️ Dashboard Container */
+    .app-container.login-mode .content {
+        margin-left: 0 !important;
+        width: 100% !important;
+        padding: 0 !important;
+        overflow: hidden;
+    }
+
+/* =========================
+   ⚡ SIDEBAR
+   ========================= */
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100vh;
+    background: #2c3e50;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0.5rem;
+    box-sizing: border-box;
+    transition: width 0.3s ease;
+    z-index: 100;
+}
+
+    .sidebar.collapsed {
+        width: 60px;
+    }
+
+/* =========================
+   ⚙️ DASHBOARD CONTENT
+   ========================= */
+
 .dashboard-container {
     max-width: 1200px;
     margin: auto;
@@ -83,16 +103,18 @@ html, body, #root {
     margin-bottom: 24px;
 }
 
-/* 1️⃣ Heatmap: single card wrapper */
+/* =========================
+   🗺️ HEATMAP CARD
+   ========================= */
+
 .heatmap-card {
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     padding: 20px;
     margin-bottom: 32px;
-    position: relative;
 }
-    /* wipe out any inner-background on USHeatMap’s root DIV */
+
     .heatmap-card > div {
         background: transparent !important;
         box-shadow: none !important;
@@ -100,7 +122,10 @@ html, body, #root {
         padding: 0;
     }
 
-/* 2️⃣ Filters */
+/* =========================
+   🎛️ FILTERS
+   ========================= */
+
 .filters-container {
     display: flex;
     gap: 16px;
@@ -117,7 +142,10 @@ html, body, #root {
         background: #fff;
     }
 
-/* 3️⃣ KPI Cards */
+/* =========================
+   📊 KPI & CHARTS
+   ========================= */
+
 .metrics-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
@@ -125,7 +153,6 @@ html, body, #root {
     margin-bottom: 40px;
 }
 
-/* 4️⃣ Card Base */
 .card {
     background: #fff;
     border-radius: 8px;
@@ -138,7 +165,6 @@ html, body, #root {
         transform: translateY(-5px);
     }
 
-/* 5️⃣ Charts Grid: 2×2 on desktop, 1×N on mobile */
 .charts-grid {
     display: grid;
     gap: 20px;
@@ -147,7 +173,7 @@ html, body, #root {
 
 @media (min-width: 768px) {
     .charts-grid {
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -157,7 +183,6 @@ html, body, #root {
     }
 }
 
-/* Ensure each chart fits entirely in its card */
 .chart-wrapper {
     width: 100%;
     height: 300px;
@@ -167,22 +192,28 @@ html, body, #root {
         height: 360px;
     }
 
-/* 6️⃣ Insights Grid */
+/* =========================
+   📌 INSIGHTS
+   ========================= */
+
 .insights-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
     gap: 20px;
     margin-bottom: 40px;
 }
 
-/* —————— Footer —————— */
+/* =========================
+   🦶 FOOTER
+   ========================= */
+
 .app-footer {
     background: #f5f6f8;
     padding: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: auto; /* push to bottom */
+    margin-top: auto;
 }
 
 .footer-logos {
@@ -201,7 +232,7 @@ html, body, #root {
     color: #333;
 }
 
-@media (max-width:700px) {
+@media (max-width: 700px) {
     .app-footer {
         flex-direction: column;
         text-align: center;
@@ -212,14 +243,16 @@ html, body, #root {
     }
 }
 
-/* Dark-mode tweaks */
+/* =========================
+   🌙 DARK MODE
+   ========================= */
+
 [data-theme="dark"] .card,
 [data-theme="dark"] .heatmap-card {
     background: #1a1a1a;
     color: #eee;
 }
 
-    [data-theme="dark"] .card h3,
-    [data-theme="dark"] .dashboard-title {
-        color: #fff;
-    }
+[data-theme="dark"] .dashboard-title {
+    color: #fff;
+}

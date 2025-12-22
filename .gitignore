@@ -1,0 +1,15 @@
+# Secrets
+.env
+scorecard_frontend/.env
+
+# Node
+node_modules/
+
+# Python
+__pycache__/
+*.pyc
+venv/
+
+# IDE
+.vs/
+.vscode/
