@@ -21,6 +21,7 @@ import Users from "./pages/Users";
 import Projects from "./pages/Projects";
 import Analytics from "./pages/Analytics";
 import Predict from "./pages/Predict";
+import UploadUpdate from "./pages/UploadUpdate";
 
 import { DashboardProvider } from "./context/DashboardContext";
 import { isAuthed, getRole } from "./utils/auth";
@@ -101,6 +102,15 @@ function AppLayout({ collapsed, onToggleSidebar }) {
             element={
               <ProtectedRoute>
                 <Predict />
+              </ProtectedRoute>
+            }
+          />
+
+          <Route
+            path="/upload"
+            element={
+              <ProtectedRoute>
+                <UploadUpdate />
               </ProtectedRoute>
             }
           />
